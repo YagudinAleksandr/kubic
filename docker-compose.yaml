@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  yii_server:
+    container_name: yii_server
+    build: ./docker/
+    ports: 
+    - 8001:80
+    volumes:
+      - ./docker/project/yii-server:/app
